@@ -18,36 +18,36 @@ export default function Nabvar() {
               src={logoImg}
               alt="Website Logo"
             />
-            <h1 className="text-xl font-semibold ml-1">EduNotes</h1>
+            <h1 className="text-xl ml-1 poppins-semibold">EduNotes</h1>
           </Link>
           <div className="flex items-center justify-between">
             <div className="hidden md:block lg:block">
               <Link
-                className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
                 to="/"
               >
                 Home
               </Link>
               <Link
-                className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
                 to="/"
               >
                 Courses
               </Link>
               <Link
-                className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
                 to="/"
               >
                 About Us
               </Link>
               <Link
-                className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
                 to="/"
               >
                 Contact Us
               </Link>
               <Link
-                className="text-lg mr-3 cursor-pointer border p-3 bg-[#F56565] text-white rounded-lg"
+                className="text-lg poppins-regular mr-3 cursor-pointer border p-3 bg-[#F56565] text-white rounded-lg"
                 to="/"
               >
                 Register
@@ -71,7 +71,7 @@ export default function Nabvar() {
                             src={logoImg}
                             alt="Website Logo"
                           />
-                          <h1 className="text-lg font-semibold ml-1">
+                          <h1 className="text-lg poppins-semibold ml-1">
                             EduNotes
                           </h1>
                         </div>
@@ -83,32 +83,32 @@ export default function Nabvar() {
                     {" "}
                     <div>
                       <Link
-                        className="text-lg cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-regular cursor-pointer hover:text-[#F56565] block"
                         to="/"
                       >
                         Home
                       </Link>
                       <Link
-                        className="text-lg mt-1 cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
                         to="/"
                       >
                         Courses
                       </Link>
                       <Link
-                        className="text-lg mt-1 cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
                         to="/"
                       >
                         About Us
                       </Link>
                       <Link
-                        className="text-lg mt-1 cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
                         to="/"
                       >
                         Contact Us
                       </Link>
                       <hr className="my-3 border border-gray-100" />
                       <Link
-                        className="text-lg cursor-pointer border p-2 text-center bg-[#F56565] text-white rounded-lg block"
+                        className="text-lg poppins-regular cursor-pointer border p-2 text-center bg-[#F56565] text-white rounded-lg block"
                         to="/"
                       >
                         Register
