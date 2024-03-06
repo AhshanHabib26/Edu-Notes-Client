@@ -10,33 +10,48 @@ export default function Nabvar() {
   return (
     <div className="bg-green-100">
       <div className="flex items-center justify-between mx-5 p-3">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             className="w-[40px] h-[40px] object-cover"
             src={logoImg}
             alt="Website Logo"
           />
           <h1 className="text-xl font-semibold ml-1">EduNotes</h1>
-        </div>
+        </Link>
         <div className="flex items-center justify-between">
-          <div>
-            <Link className="text-lg mr-3 cursor-pointer" to="/">
+          <div className="hidden md:block lg:block">
+            <Link
+              className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+              to="/"
+            >
               Home
             </Link>
-            <Link className="text-lg mr-3 cursor-pointer" to="/">
+            <Link
+              className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+              to="/"
+            >
               Courses
             </Link>
-            <Link className="text-lg mr-3 cursor-pointer" to="/">
+            <Link
+              className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+              to="/"
+            >
               About Us
             </Link>
-            <Link className="text-lg mr-3 cursor-pointer" to="/">
+            <Link
+              className="text-lg mr-3 cursor-pointer hover:text-[#F56565]"
+              to="/"
+            >
               Contact Us
             </Link>
-            <Link className="text-lg mr-3 cursor-pointer" to="/">
+            <Link
+              className="text-lg mr-3 cursor-pointer border p-3 bg-[#F56565] text-white rounded-lg"
+              to="/"
+            >
               Register
             </Link>
           </div>
-          <div className="">
+          <div className=" block lg:hidden md:hidden">
             <Drawer.Root
               opened={opened}
               onClose={() => setOpened(false)}
@@ -60,12 +75,47 @@ export default function Nabvar() {
                     <Drawer.CloseButton />
                   </div>
                 </Drawer.Header>
-                <Drawer.Body>Drawer content</Drawer.Body>
+                <Drawer.Body>
+                  {" "}
+                  <div>
+                    <Link
+                      className="text-lg cursor-pointer hover:text-[#F56565] block"
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      className="text-lg mt-1 cursor-pointer hover:text-[#F56565] block"
+                      to="/"
+                    >
+                      Courses
+                    </Link>
+                    <Link
+                      className="text-lg mt-1 cursor-pointer hover:text-[#F56565] block"
+                      to="/"
+                    >
+                      About Us
+                    </Link>
+                    <Link
+                      className="text-lg mt-1 cursor-pointer hover:text-[#F56565] block"
+                      to="/"
+                    >
+                      Contact Us
+                    </Link>
+                    <hr className="my-3 border border-gray-100" />
+                    <Link
+                      className="text-lg cursor-pointer border p-2 text-center bg-[#F56565] text-white rounded-lg block"
+                      to="/"
+                    >
+                      Register
+                    </Link>
+                  </div>
+                </Drawer.Body>
               </Drawer.Content>
             </Drawer.Root>
 
             <button onClick={() => setOpened(true)}>
-              <AlignJustify />
+              <AlignJustify size={20} />
             </button>
           </div>
         </div>
