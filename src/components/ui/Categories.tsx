@@ -66,7 +66,7 @@ export type TCategory = {
 
 const Categories = () => {
   return (
-    <div className="mt-14">
+    <div className="mt-16 lg:mt-24">
       <Container>
         <div className="text-center mb-10">
           <h1 className="text-xl poppins-regular text-[#fc4f4f]">
