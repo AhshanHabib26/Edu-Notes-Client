@@ -5,11 +5,8 @@ import { CheckSquare, Play } from "lucide-react";
 import { useState } from "react";
 import { Modal } from "@mantine/core";
 
-
-
 const AboutUs = () => {
   const [opened, setOpened] = useState(false);
-
 
   return (
     <div className="mt-32 lg:mt-40">
@@ -17,13 +14,13 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto">
           <div className=" relative">
             <img
-              className=" relative w-[450px] h-[400px] object-cover rounded-xl"
+              className=" relative w-[450px] h-[400px] object-cover rounded-xl opacity-85"
               src={ImgOne}
               alt=""
             />
             <div className=" absolute top-[-60px] right-[20px] lg:top-[-60px] lg:right-[50px]  shadow-lg p-2 bg-green-100 rounded-lg">
               <img
-                className="w-[200px] h-[150px] object-cover rounded-lg"
+                className="w-[200px] h-[150px] object-cover rounded-lg opacity-75"
                 src={ImgTwo}
                 alt=""
               />
@@ -45,6 +42,10 @@ const AboutUs = () => {
                 onClose={() => setOpened(false)}
                 centered
                 size="md"
+                overlayProps={{
+                  backgroundOpacity: 0.55,
+                  blur: 3,
+                }}
               >
                 <div>
                   <iframe
@@ -79,18 +80,20 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="mt-5">
-                <div className="flex items-center mb-3">
+              <div className="flex items-center mb-3">
                 <CheckSquare size={20} color="#fc4f4f" />
                 <p className=" text-md poppins-light ml-2">Expert Trainers</p>
-                </div>
-                <div className="flex items-center mb-3">
+              </div>
+              <div className="flex items-center mb-3">
                 <CheckSquare size={20} color="#fc4f4f" />
-                <p className=" text-md poppins-light ml-2">Online Remote Learning</p>
-                </div>
-                <div className="flex items-center">
+                <p className=" text-md poppins-light ml-2">
+                  Online Remote Learning
+                </p>
+              </div>
+              <div className="flex items-center">
                 <CheckSquare size={20} color="#fc4f4f" />
                 <p className=" text-md poppins-light ml-2">Lifetime Access</p>
-                </div>
+              </div>
             </div>
           </div>
         </div>
