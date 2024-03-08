@@ -72,11 +72,11 @@ const Categories = () => {
           <h1 className="text-xl poppins-regular text-[#fc4f4f]">
             Top Categories
           </h1>
-          <p className="text-3xl poppins-bold text-[#001D25]">
-            Online Classes For Remote Learning.
+          <p className="text-4xl poppins-semibold text-[#001D25]">
+            Online <span className="text-[#fc4f4f]">Classes</span> For Remote Learning.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {categoryData.map((category: TCategory, index: number) => (
             <CategoryCard category={category} key={category.id} index={index} />
           ))}
