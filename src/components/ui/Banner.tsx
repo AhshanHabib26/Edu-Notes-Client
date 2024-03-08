@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className="bg-[#001D25] pb-14 lg:pb-0">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 place-content-center py-20 lg:py-24 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 place-content-center py-20 lg:py-28 ">
           <div className="flex flex-col justify-center">
             <h1 className="text-5xl lg:text-7xl text-white  poppins-bold">
               Take Student <span className="text-[#fc4f4f]">Experience</span> To
