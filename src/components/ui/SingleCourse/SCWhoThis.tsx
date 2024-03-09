@@ -18,7 +18,7 @@ const SCWhoThis = () => {
       <div>
         {SCWData.map((item, index) => (
           <div className="flex mb-2" key={index}>
-            <Check size={20} color="#FC4F4F" />
+            <Check size={20} color="#FC4F4F" className=" shrink-0" />
             <p className=" text-md poppins-regular ml-2">{item}</p>
           </div>
         ))}
