@@ -1,5 +1,7 @@
+
 import { convertRatingToIcons } from "../../../utils/RatingConverter";
 import { TComment } from "./SCReviews";
+
 
 interface ICommentProps {
   comment: TComment;
@@ -7,6 +9,8 @@ interface ICommentProps {
 
 const SCReviewCard: React.FC<ICommentProps> = ({ comment }) => {
   const ratingIcons = convertRatingToIcons(comment.rating);
+
+ 
 
   return (
     <div className="mt-5 shadow rounded-lg p-4">
@@ -35,6 +39,7 @@ const SCReviewCard: React.FC<ICommentProps> = ({ comment }) => {
       <div className="mt-3">
         <p className=" text-md poppins-light text-justify">{comment.review}</p>
       </div>
+     
     </div>
   );
 };

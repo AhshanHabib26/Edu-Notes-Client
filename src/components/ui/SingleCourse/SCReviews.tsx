@@ -3,6 +3,8 @@ import AvatarImgTwo from "../../../assets/images/courseImgThree.jpg";
 import AvatarImgThree from "../../../assets/images/courseImgOne.jpg";
 import AvatarImgFour from "../../../assets/images/cybersecurity.jpg";
 import SCReviewCard from "./SCReviewCard";
+import { useState } from "react";
+import SCRModal from "./SCRModal";
 
 const courseComment = [
   {
@@ -53,13 +55,19 @@ export type TComment = {
 };
 
 const SCReviews = () => {
+  const [opened, setOpened] = useState(false);
   return (
     <div>
       <div className="flex items-center justify-between">
         <h1 className="text-2xl poppins-semibold text-[#001D25] mb-2">
           Course <span className="text-[#FC4F4F]">Reviews.</span>
         </h1>
-        <button className="text-lg poppins-semibold bg-[#001D25] text-white px-4 py-2 rounded-md">Reviews</button>
+        <button
+          onClick={() => setOpened(true)}
+          className="text-md poppins-regular bg-[#001D25] text-white p-3  rounded-md"
+        >
+          Share Thoughts
+        </button>
       </div>
       <hr className=" border-gray-200 mt-2" />
       <div>
@@ -67,6 +75,7 @@ const SCReviews = () => {
           <SCReviewCard comment={comment} key={comment.id} />
         ))}
       </div>
+      <SCRModal opened={opened} setOpened={setOpened} />
     </div>
   );
 };
