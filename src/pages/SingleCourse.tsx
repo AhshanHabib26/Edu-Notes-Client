@@ -1,4 +1,5 @@
 import SCAbout from "../components/ui/SingleCourse/SCAbout";
+import SCBInstructors from "../components/ui/SingleCourse/SCBInstructors";
 import SCBanner from "../components/ui/SingleCourse/SCBanner";
 import SCContent from "../components/ui/SingleCourse/SCContent";
 import SCRequirements from "../components/ui/SingleCourse/SCRequirements";
@@ -18,6 +19,7 @@ const SingleCourse = () => {
                 <SCRequirements />
                 <SCWhoThis />
                 <SCContent />
+                <SCBInstructors />
               </div>
             </div>
             <div className="lg:col-span-2">

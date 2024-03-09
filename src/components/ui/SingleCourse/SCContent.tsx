@@ -79,7 +79,7 @@ const SCContent = () => {
   return (
     <div>
       <h1 className="text-2xl poppins-semibold text-[#001D25] mb-5">
-        Course <span className="text-[#FC4F4F]">content</span>
+        Course <span className="text-[#FC4F4F]">Content</span>
       </h1>
       <div className=" border border-gray-200 rounded-lg">
         <Accordion transitionDuration={500} >
