@@ -9,7 +9,7 @@ export default function Nabvar() {
   const [opened, setOpened] = useState(false);
 
   return (
-    <div className="bg-green-100">
+    <div className="bg-green-100 shadow">
       <Container>
         <div className="flex items-center justify-between p-3">
           <Link to="/" className="flex items-center">
