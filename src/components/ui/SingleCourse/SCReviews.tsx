@@ -28,7 +28,7 @@ const courseComment = [
     name: "Olivia Lake",
     review:
       "I can't recommend Starting SEO as your Home Based Business enough! It's like having a personal SEO mentor guiding you towards business success from the comfort of your home. The content is rich, relevant, and incredibly valuable.",
-    rating: 4.3,
+    rating: 4,
     image: AvatarImgThree,
     time: "3 weeks",
   },
@@ -37,7 +37,7 @@ const courseComment = [
     name: "Luke Stone",
     review:
       "Enrolling in Starting SEO as your Home Based Business was the best decision I made for my entrepreneurial journey. The course is comprehensive, engaging, and tailored for those ready to thrive in the SEO-driven business world.",
-    rating: 4.3,
+    rating: 4.5,
     image: AvatarImgFour,
     time: "3 weeks",
   },
@@ -55,10 +55,13 @@ export type TComment = {
 const SCReviews = () => {
   return (
     <div>
-      <h1 className="text-2xl poppins-semibold text-[#001D25] mb-2">
-        Course <span className="text-[#FC4F4F]">Reviews.</span>
-      </h1>
-      <hr className=" border-gray-200" />
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl poppins-semibold text-[#001D25] mb-2">
+          Course <span className="text-[#FC4F4F]">Reviews.</span>
+        </h1>
+        <button className="text-lg poppins-semibold bg-[#001D25] text-white px-4 py-2 rounded-md">Reviews</button>
+      </div>
+      <hr className=" border-gray-200 mt-2" />
       <div>
         {courseComment.map((comment: TComment) => (
           <SCReviewCard comment={comment} key={comment.id} />
