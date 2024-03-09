@@ -23,19 +23,3 @@
   }
 }
 
-.SCBTitle::after {
-  position: absolute;
-  content: url(../assets/icons/shapeOne.png);
-  top: -20px;
-  right: 0px;
-  z-index: -999;
-  animation: spin 5s linear infinite;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
