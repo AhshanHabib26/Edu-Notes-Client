@@ -9,7 +9,7 @@ import Styles from "../../../styles/SCBInstructors.module.css"
 
 const SCBInstructors = () => {
   return (
-    <div className="mt-12">
+    <div className="my-12">
       <h1 className="text-2xl poppins-semibold text-[#001D25] mb-5">
         About Course <span className="text-[#FC4F4F]">Instructor.</span>
       </h1>
