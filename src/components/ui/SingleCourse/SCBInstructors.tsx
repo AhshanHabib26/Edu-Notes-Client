@@ -1,11 +1,5 @@
 import InstructorImg from "../../../assets/images/instructorImg.png";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa6";
-import Styles from "../../../styles/SCBInstructors.module.css"
+import SCShare from "./SCShare";
 
 const SCBInstructors = () => {
   return (
@@ -39,22 +33,8 @@ const SCBInstructors = () => {
             I actively seek out new technologies and stay up-to-date on industry
             trends and advancements.
           </p>
-          <div className="flex items-center justify-end mt-4">
-            <a className={Styles.SclAnchor} target="_blank" href="https://web.facebook.com/AhshanHabib26">
-              <FaFacebookF />
-            </a>
-            <a className={Styles.SclAnchor} target="_blank" href="https://www.linkedin.com/in/ahshanhabib26/">
-              {" "}
-              <FaLinkedinIn />
-            </a>
-            <a className={Styles.SclAnchor} target="_blank" href="https://github.com/AhshanHabib26">
-              {" "}
-              <FaGithub />
-            </a>
-            <a className={Styles.SclAnchor} href="##">
-              {" "}
-              <FaYoutube />
-            </a>
+          <div>
+            <SCShare  />
           </div>
         </div>
       </div>
