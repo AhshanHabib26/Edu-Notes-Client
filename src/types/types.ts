@@ -11,3 +11,10 @@ export type TCourse = {
   rating: number;
   ratingCount: number;
 };
+
+export type TInstructor = {
+  id: string;
+  instructorName: string;
+  designation: string;
+  image: string;
+};
