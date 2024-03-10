@@ -7,6 +7,7 @@ import FilterByInstructor from "../components/ui/Courses/FilterByInstructor";
 import FilterByLevel from "../components/ui/Courses/FilterByLevel";
 import FilterByLanguage from "../components/ui/Courses/FilterByLanguage";
 import FilterReset from "../components/ui/Courses/FilterReset";
+import CoursePagination from "../components/ui/Courses/CoursePagination";
 
 const Course = () => {
   const [toggleButton, setToggleButton] = useState(false);
@@ -33,6 +34,9 @@ const Course = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="my-12 flex items-end justify-end">
+            <CoursePagination />
           </div>
         </Container>
       </div>
