@@ -29,7 +29,7 @@ const CoursePageCard: React.FC<ICourseProps> = ({ course }) => {
           </p>
         </div>
         <div className="ml-3">
-          <div className="flex items-center justify-between my-3" >
+          <div className="flex items-center justify-between mt-5 mb-2" >
             <div>
               <p
                 className={`text-xl poppins-semibold text-[#fc4f4f] ${Styles.CCPrice}`}
@@ -73,16 +73,16 @@ const CoursePageCard: React.FC<ICourseProps> = ({ course }) => {
           </div>
         </div>
         <div className={`${Styles.CCIconsContainer} hidden`}>
-          <div className={`${Styles.CCIcons} flex items-center`}>
+          <div className={`${Styles.CCIcons} flex items-center flex-col lg:flex-row`}>
             <ShoppingCart
-              size={20}
+              size={25}
               color="#fc4f4f"
               className=" cursor-pointer"
             />
             <Link to={`/courses/${course.id}`}>
               <FileInput
-                size={20}
-                className="ml-3 cursor-pointer"
+                size={25}
+                className="lg:ml-3 ml-0 mt-3 lg:mt-0 cursor-pointer"
                 color="#ff7c02"
               />
             </Link>
