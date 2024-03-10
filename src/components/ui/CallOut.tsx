@@ -8,7 +8,7 @@ const CallOut = () => {
       <div className={`${Styles.COBanner} py-28`}>
         <Container>
           <div className="flex items-center justify-center flex-col text-center">
-            <h1 className="text-2xl lg:text-4xl poppins-semibold text-[#001D25] max-w-[30ch]">
+            <h1 className="text-2xl lg:text-5xl poppins-semibold text-[#001D25] max-w-[30ch]">
               Get Your Quality Skills{" "}
               <span className="text-[#FC4F4F]">Certificate </span> Through{" "}
               <span className="text-[#FC4F4F]">EduNotes</span>{" "}
