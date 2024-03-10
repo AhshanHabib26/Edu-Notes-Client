@@ -1,7 +1,7 @@
 import { Bookmark, FileInput, Layers3, ShoppingCart } from "lucide-react";
-import { TCourse } from "../components/ui/Course";
 import Styles from "../styles/CourseCard.module.css";
 import { Link } from "react-router-dom";
+import { TCourse } from "../types/types";
 
 interface ICourseProps {
   course: TCourse;
@@ -54,13 +54,13 @@ const CourseCard: React.FC<ICourseProps> = ({ course }) => {
         <div className={`${Styles.CCIconsContainer} hidden`}>
           <div className={`${Styles.CCIcons} flex items-center`}>
             <ShoppingCart
-              size={20}
+              size={25}
               color="#fc4f4f"
               className=" cursor-pointer"
             />
             <Link to={`courses/${course.id}`}>
               <FileInput
-                size={20}
+                size={25}
                 className="ml-3 cursor-pointer"
                 color="#ff7c02"
               />
