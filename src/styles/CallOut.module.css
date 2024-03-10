@@ -1,0 +1,7 @@
+.COBanner {
+  background-image: url(../assets/images/CallOutBanner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

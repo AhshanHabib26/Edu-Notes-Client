@@ -3,6 +3,7 @@ import MainLayout from "../components/layout/MainLayout";
 import Home from "../pages/Home";
 import SingleCourse from "../pages/SingleCourse";
 import Course from "../pages/Course";
+import ContactUs from "../pages/ContactUs";
 
 export const routes = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const routes = createBrowserRouter([
       {
         path: "/courses/:id",
         element: <SingleCourse />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
       },
     ],
   },
