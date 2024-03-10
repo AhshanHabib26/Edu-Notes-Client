@@ -2,18 +2,9 @@ import { Link } from "react-router-dom";
 import getAllCourses from "../../data/Course";
 import CourseCard from "../../libs/CourseCard";
 import Container from "../../utils/Container";
+import { TCourse } from "../../types/types";
 
-export type TCourse = {
-  id: string;
-  title: string;
-  description: string;
-  instructor: string;
-  image: string;
-  price: number;
-  duration: string;
-  level: string;
-  category: string;
-};
+
 
 const courses = getAllCourses();
 
@@ -35,7 +26,12 @@ const Course = () => {
           ))}
         </div>
         <div className="mt-8 flex items-center justify-center">
-          <Link className="bg-[#001D25] px-5 py-3 poppins-regular text-lg text-white rounded-md hover:bg-[#fc4f4f]" to="/all-courses">Explore More Courses</Link>
+          <Link
+            className="bg-[#001D25] px-5 py-3 poppins-regular text-lg text-white rounded-md hover:bg-[#fc4f4f]"
+            to="/courses"
+          >
+            Explore More Courses
+          </Link>
         </div>
       </Container>
     </div>

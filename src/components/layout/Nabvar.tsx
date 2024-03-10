@@ -30,7 +30,7 @@ export default function Nabvar() {
               </Link>
               <Link
                 className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
-                to="/"
+                to="/courses"
               >
                 Courses
               </Link>

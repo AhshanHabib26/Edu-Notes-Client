@@ -1,21 +1,24 @@
 import { Bookmark, FileInput, Layers3, ShoppingCart } from "lucide-react";
-import { TCourse } from "../components/ui/Course";
-import Styles from "../styles/CourseCard.module.css";
 import { Link } from "react-router-dom";
+import Styles from "../styles/CourseCard.module.css";
+import { convertRatingToIcons } from "../utils/RatingConverter";
+import { TCourse } from "../types/types";
 
 interface ICourseProps {
   course: TCourse;
 }
 
-const CourseCard: React.FC<ICourseProps> = ({ course }) => {
+const CoursePageCard: React.FC<ICourseProps> = ({ course }) => {
+  const ratingIcons = convertRatingToIcons(course.rating);
+
   return (
     <div>
       <div
-        className={`${Styles.CCContainer} flex items-center bg-white p-6 rounded-lg shadow cursor-pointer relative`}
+        className={`${Styles.CCContainer} flex items-center flex-col lg:flex-row bg-white p-6 rounded-lg shadow cursor-pointer relative`}
       >
-        <div className=" relative">
+        <div className=" relative shrink-0">
           <img
-            className={`${Styles.CCImage} w-[180px] h-[120px] object-cover rounded-lg relative`}
+            className={`${Styles.CCImage}  w-[280px] h-[200px] lg:w-[220px] lg:h-[160px] object-cover rounded-lg relative`}
             src={course.image}
             alt=""
           />
@@ -26,17 +29,35 @@ const CourseCard: React.FC<ICourseProps> = ({ course }) => {
           </p>
         </div>
         <div className="ml-3">
-          <p
-            className={`text-xl poppins-semibold text-[#fc4f4f] ${Styles.CCPrice}`}
-          >
-            ${course.price}
-          </p>
+          <div className="flex items-center justify-between my-3" >
+            <div>
+              <p
+                className={`text-xl poppins-semibold text-[#fc4f4f] ${Styles.CCPrice}`}
+              >
+                ${course.price}
+              </p>
+            </div>
+            <div className="flex items-center">
+              {ratingIcons.map((icon, index) => (
+                <span className="text-orange-400" key={index}>
+                  {icon}
+                </span>
+              ))}
+              <p className="text-md poppins-regular">
+                ({`${course.rating}/ ${course.ratingCount} Rating`})
+              </p>
+            </div>
+          </div>
           <div>
             <h1 className={`text-lg poppins-regular ${Styles.CCTitle}`}>
               {course.title}
             </h1>
+            <p className="text-md poppins-light my-2">{`${course.description.slice(
+              0,
+              120
+            )}....`}</p>
           </div>
-          <div className="mt-1">
+          <div className="mt-1 flex items-center justify-between">
             <div className="flex items-center">
               <Layers3 size={18} color="#001D25" />
               <p className=" poppins-regular text-[#001D25] ml-2">
@@ -58,7 +79,7 @@ const CourseCard: React.FC<ICourseProps> = ({ course }) => {
               color="#fc4f4f"
               className=" cursor-pointer"
             />
-            <Link to={`courses/${course.id}`}>
+            <Link to={`/courses/${course.id}`}>
               <FileInput
                 size={20}
                 className="ml-3 cursor-pointer"
@@ -72,4 +93,4 @@ const CourseCard: React.FC<ICourseProps> = ({ course }) => {
   );
 };
 
-export default CourseCard;
+export default CoursePageCard;
