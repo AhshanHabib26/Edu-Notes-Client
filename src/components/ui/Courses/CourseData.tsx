@@ -1,7 +1,6 @@
 import getAllCourses from "../../../data/Course";
 import CourseGridCard from "../../../libs/CourseGridCard";
 import CoursePageCard from "../../../libs/CoursePageCard";
-// import CoursePageCard from "../../../libs/CoursePageCard";
 import { TCourse } from "../../../types/types";
 
 interface CToggleProps {
