@@ -1,5 +1,6 @@
 import AboutUs from "../components/ui/AboutUs";
 import Banner from "../components/ui/Banner";
+import Blogs from "../components/ui/Blogs";
 import CallOut from "../components/ui/CallOut";
 import Categories from "../components/ui/Categories";
 import Course from "../components/ui/Course";
@@ -20,6 +21,7 @@ const Home = () => {
       <OurPatners />
       <CallOut />
       <CourseInfo />
+      <Blogs />
     </div>
   );
 };

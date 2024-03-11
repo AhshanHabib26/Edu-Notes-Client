@@ -36,7 +36,7 @@ const instructorData = [
 const Instructor = () => {
   return (
     <div className="mt-16 lg:mt-24">
-      <div className="bg-green-100 py-8">
+      <div className="bg-green-50 py-8">
         <Container>
           <div className="text-center mb-10">
             <h1 className="text-xl poppins-regular text-[#fc4f4f]">

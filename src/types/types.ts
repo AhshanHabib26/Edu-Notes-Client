@@ -18,3 +18,15 @@ export type TInstructor = {
   designation: string;
   image: string;
 };
+
+export type TBlog = {
+  id: string;
+  title: string;
+  author: string;
+  date: string;
+  content: string;
+  tags: string[];
+  likes: number;
+  comments: number;
+  image: string;
+};

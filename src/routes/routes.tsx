@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import SingleCourse from "../pages/SingleCourse";
 import Course from "../pages/Course";
 import ContactUs from "../pages/ContactUs";
+import Blogs from "../pages/Blogs";
+import SingleBlogs from "../pages/SingleBlogs";
 
 export const routes = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ export const routes = createBrowserRouter([
       {
         path: "/courses/:id",
         element: <SingleCourse />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/blogs/:id",
+        element: <SingleBlogs />,
       },
       {
         path: "/contact-us",
