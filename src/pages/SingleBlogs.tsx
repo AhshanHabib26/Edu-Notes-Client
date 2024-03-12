@@ -1,4 +1,7 @@
+import BlogComment from "../components/ui/SingleBlog/BlogComment";
+import ReletedBlog from "../components/ui/SingleBlog/ReletedBlog";
 import SingleBlogInfo from "../components/ui/SingleBlog/SingleBlogInfo";
+import SingleBlogUser from "../components/ui/SingleBlog/SingleBlogUser";
 import Container from "../utils/Container";
 
 const SingleBlogs = () => {
@@ -9,6 +12,9 @@ const SingleBlogs = () => {
           <div className="lg:col-span-8 ">
             <div className="w-full lg:w-10/12 ">
               <SingleBlogInfo />
+              <SingleBlogUser />
+              <ReletedBlog />
+              <BlogComment />
             </div>
           </div>
           <div className="lg:col-span-3">

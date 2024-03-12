@@ -1,8 +1,6 @@
 import { CalendarDays, MessagesSquare, ThumbsUp, User } from "lucide-react";
 import ImgOne from "../../../assets/images/courseImgOne.jpg";
 import SCShare from "../SingleCourse/SCShare";
-import SingleBlogUser from "./SingleBlogUser";
-import ReletedBlog from "./ReletedBlog";
 const singleData = {
   id: "1",
   title: "The Importance of Necessity in Course Selection",
@@ -90,8 +88,7 @@ const SingleBlogInfo = () => {
         </div>
       </div>
       <hr className="my-10 border-gray-200" />
-      <SingleBlogUser />
-      <ReletedBlog/>
+     
     </div>
   );
 };

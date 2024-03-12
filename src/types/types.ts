@@ -30,3 +30,29 @@ export type TBlog = {
   comments: number;
   image: string;
 };
+
+
+type TAuthor = {
+  username: string;
+  name: string;
+  avatar: string;
+};
+
+export type TReply = {
+  replyId: string;
+  author: TAuthor;
+  timestamp: string;
+  content: string;
+};
+
+export type TComment = {
+  commentId: string;
+  postId: string;
+  author: TAuthor;
+  timestamp: string;
+  content: string;
+  likes: number;
+  replies: TReply[];
+};
+
+
