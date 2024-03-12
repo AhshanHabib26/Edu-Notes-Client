@@ -1,4 +1,5 @@
 import BlogComment from "../components/ui/SingleBlog/BlogComment";
+import BlogCommentForm from "../components/ui/SingleBlog/BlogCommentForm";
 import ReletedBlog from "../components/ui/SingleBlog/ReletedBlog";
 import SingleBlogInfo from "../components/ui/SingleBlog/SingleBlogInfo";
 import SingleBlogUser from "../components/ui/SingleBlog/SingleBlogUser";
@@ -15,6 +16,7 @@ const SingleBlogs = () => {
               <SingleBlogUser />
               <ReletedBlog />
               <BlogComment />
+              <BlogCommentForm />
             </div>
           </div>
           <div className="lg:col-span-3">
