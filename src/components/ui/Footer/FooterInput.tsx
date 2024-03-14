@@ -1,6 +1,16 @@
 import { Send } from "lucide-react";
+import { FormEvent, useState } from "react";
+import toast from "react-hot-toast";
 
 const FooterInput = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmuit = (e: FormEvent) => {
+    e.preventDefault();
+    toast.success("Thanks For Subscribe", { id: "subscribeId" });
+    setEmail("");
+  };
+
   return (
     <div>
       <h1 className="text-xl poppins-semibold">Subscribe</h1>
@@ -9,10 +19,13 @@ const FooterInput = () => {
           Enter your email address to register to our newsletter subscription
         </p>
         <div className="mt-5 relative">
-          <form action="">
+          <form onSubmit={handleSubmuit}>
             <input
               className="w-full h-[50px] outline-none text-md poppins-light pl-2 text-[#001D25] relative"
               type="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               placeholder="Your Email"
             />

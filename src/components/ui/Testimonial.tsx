@@ -26,7 +26,11 @@ const Testimonial = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
           <div className=" rounded-lg p-2">
-            <img className="h-[300px] w-full object-cover"  src={TestimonialImg} alt="" />
+            <img
+              className="h-[300px] w-full object-cover"
+              src={TestimonialImg}
+              alt=""
+            />
           </div>
           <div>
             <SwiperComponent
@@ -37,15 +41,25 @@ const Testimonial = () => {
             >
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id}>
-                  <SwiperSlide>
+                  <SwiperSlide key={testimonial.id}>
                     <div className="border border-gray-200 rounded-lg p-8 flex items-center justify-center flex-col shadow-xl cursor-pointer">
                       <div>
-                        <img className="w-[100px] h-[100px] rounded-full border object-cover" src={testimonial.image} alt="" />
+                        <img
+                          className="w-[100px] h-[100px] rounded-full border object-cover"
+                          src={testimonial.image}
+                          alt=""
+                        />
                       </div>
-                      <h1 className="text-md poppins-regular text-center my-4">{testimonial.review}</h1>
+                      <h1 className="text-md poppins-regular text-center my-4">
+                        {testimonial.review}
+                      </h1>
                       <div className="text-center">
-                        <h1 className="text-xl poppins-semibold">{testimonial.name}</h1>
-                        <p className="text-md poppins-light">{testimonial.occupation}</p>
+                        <h1 className="text-xl poppins-semibold">
+                          {testimonial.name}
+                        </h1>
+                        <p className="text-md poppins-light">
+                          {testimonial.occupation}
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>

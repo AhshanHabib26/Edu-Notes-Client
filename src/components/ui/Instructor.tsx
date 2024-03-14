@@ -26,7 +26,7 @@ const instructorData = [
     image: imgThree,
   },
   {
-    id: "3",
+    id: "4",
     instructorName: "David Wilson",
     designation: "Designer",
     image: imgFour,
