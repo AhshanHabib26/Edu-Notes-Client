@@ -36,6 +36,12 @@ export default function Nabvar() {
               </Link>
               <Link
                 className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
+                to="/blogs"
+              >
+                Blogs
+              </Link>
+              <Link
+                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
                 to="/"
               >
                 About Us
@@ -90,9 +96,15 @@ export default function Nabvar() {
                       </Link>
                       <Link
                         className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
-                        to="/"
+                        to="/courses"
                       >
                         Courses
+                      </Link>
+                      <Link
+                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
+                        to="/blogs"
+                      >
+                        Blogs
                       </Link>
                       <Link
                         className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"

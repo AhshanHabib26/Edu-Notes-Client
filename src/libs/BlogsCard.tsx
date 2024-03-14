@@ -9,7 +9,7 @@ interface IBlogPorps {
 
 const BlogsCard: React.FC<IBlogPorps> = ({ blog }) => {
   return (
-    <div className={`${Styles.blogContainer} relative`}>
+    <div className={`${Styles.blogContainer} relative rounded-lg`}>
       <div className="relative">
         <img
           className={`w-full h-[220px] object-cover relative ${Styles.blogImg}`}
