@@ -1,4 +1,5 @@
 import BlogsPagination from "../components/ui/Blogs/BlogsPagination";
+import BlogsTagList from "../components/ui/Blogs/BlogsTagList";
 import BlogCategories from "../components/ui/SingleBlog/BlogCategories";
 import BlogSearchInput from "../components/ui/SingleBlog/BlogSearchInput";
 import LatestBlog from "../components/ui/SingleBlog/LatestBlog";
@@ -31,6 +32,7 @@ const Blogs = () => {
                 <BlogSearchInput />
                 <LatestBlog />
                 <BlogCategories />
+                <BlogsTagList />
               </div>
             </div>
           </div>
