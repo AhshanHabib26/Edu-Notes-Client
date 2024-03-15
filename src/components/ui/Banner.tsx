@@ -22,7 +22,7 @@ const Banner = () => {
             <div className="mt-5">
               <Link
                 className="bg-[#fc4f4f] p-4 text-lg text-white rounded-lg poppins-regular"
-                to="/"
+                to="/courses"
               >
                 Find Courses
               </Link>

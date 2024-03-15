@@ -1,4 +1,5 @@
 import Container from "../../utils/Container";
+import Styles from "../../styles/CourseInfo.module.css"
 
 const courseInfoData = [
   {
@@ -35,7 +36,7 @@ const CourseInfo = () => {
   return (
     <div className="mt-16 lg:mt-24">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 max-w-2xl mx-auto  text-center rounded-lg">
+        <div className={`${Styles.CIContainer} grid grid-cols-1 lg:grid-cols-2 max-w-2xl mx-auto  text-center rounded-lg`}>
           {courseInfoData.map((cid) => (
             <div key={cid.id} className="p-20 shadow relative">
               <h1
