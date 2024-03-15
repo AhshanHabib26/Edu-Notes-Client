@@ -18,43 +18,37 @@ export default function Nabvar() {
               src={logoImg}
               alt="Website Logo"
             />
-            <h1 className="text-xl ml-1 poppins-semibold">EduNotes</h1>
+            <h1 className="text-xl ml-1 poppins-regular">EduNotes</h1>
           </Link>
           <div className="flex items-center justify-between">
             <div className="hidden md:block lg:block">
               <Link
-                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-light mr-2 cursor-pointer hover:text-[#F56565]"
                 to="/"
               >
                 Home
               </Link>
               <Link
-                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-light mr-2 cursor-pointer hover:text-[#F56565]"
                 to="/courses"
               >
                 Courses
               </Link>
               <Link
-                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
+                className="text-lg poppins-light mr-2 cursor-pointer hover:text-[#F56565]"
                 to="/blogs"
               >
                 Blogs
               </Link>
               <Link
-                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
-                to="/"
-              >
-                About Us
-              </Link>
-              <Link
-                className="text-lg poppins-regular mr-3 cursor-pointer hover:text-[#F56565]"
-                to="/"
+                className="text-lg poppins-light mr-2 cursor-pointer hover:text-[#F56565]"
+                to="/contact-us"
               >
                 Contact Us
               </Link>
               <Link
-                className="text-lg poppins-regular mr-3 cursor-pointer border p-3 bg-[#F56565] text-white rounded-lg"
-                to="/"
+                className="text-lg poppins-light mr-2 cursor-pointer border p-3 bg-[#F56565] text-white rounded-lg"
+                to="/sign-in"
               >
                 Register
               </Link>
@@ -77,7 +71,7 @@ export default function Nabvar() {
                             src={logoImg}
                             alt="Website Logo"
                           />
-                          <h1 className="text-lg poppins-semibold ml-1">
+                          <h1 className="text-lg poppins-regular ml-1">
                             EduNotes
                           </h1>
                         </div>
@@ -89,39 +83,33 @@ export default function Nabvar() {
                     {" "}
                     <div>
                       <Link
-                        className="text-lg poppins-regular cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-light cursor-pointer hover:text-[#F56565] block"
                         to="/"
                       >
                         Home
                       </Link>
                       <Link
-                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-light mt-1 cursor-pointer hover:text-[#F56565] block"
                         to="/courses"
                       >
                         Courses
                       </Link>
                       <Link
-                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
+                        className="text-lg poppins-light mt-1 cursor-pointer hover:text-[#F56565] block"
                         to="/blogs"
                       >
                         Blogs
                       </Link>
                       <Link
-                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
-                        to="/"
-                      >
-                        About Us
-                      </Link>
-                      <Link
-                        className="text-lg poppins-regular mt-1 cursor-pointer hover:text-[#F56565] block"
-                        to="/"
+                        className="text-lg poppins-light mt-1 cursor-pointer hover:text-[#F56565] block"
+                        to="/contact-us"
                       >
                         Contact Us
                       </Link>
                       <hr className="my-3 border border-gray-100" />
                       <Link
-                        className="text-lg poppins-regular cursor-pointer border p-2 text-center bg-[#F56565] text-white rounded-lg block"
-                        to="/"
+                        className="text-lg poppins-light cursor-pointer border p-2 text-center bg-[#F56565] text-white rounded-lg block"
+                        to="/sign-in"
                       >
                         Register
                       </Link>

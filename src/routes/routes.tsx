@@ -6,6 +6,8 @@ import Course from "../pages/Course";
 import ContactUs from "../pages/ContactUs";
 import Blogs from "../pages/Blogs";
 import SingleBlogs from "../pages/SingleBlogs";
+import Signin from "../pages/Signin";
+import Signup from "../pages/Signup";
 
 export const routes = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ export const routes = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUs />,
+      },
+      {
+        path: "/sign-in",
+        element: <Signin />,
+      },
+      {
+        path: "/sign-up",
+        element: <Signup />,
       },
     ],
   },
