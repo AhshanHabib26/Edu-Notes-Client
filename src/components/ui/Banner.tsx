@@ -37,7 +37,7 @@ const Banner = () => {
                   alt="Girl Image"
                 />
               </div>
-              <div className=" absolute right-[20px] lg:right-[70px] top-28">
+              <div className=" absolute right-[10px] lg:right-[70px] top-28">
                 <img
                   className="w-[200px] h-[250px]  lg:w-[250px] lg:h-[300px]  object-cover rounded-tr-[80px] rounded-bl-[80px] shadow-2xl"
                   src={ImgOne}
@@ -45,7 +45,7 @@ const Banner = () => {
                 />
               </div>
             </div>
-            <div className=" bg-[#fff] flex items-center w-[220px] mt-5 justify-evenly p-3 rounded-lg absolute right-[210px] lg:right-[330px]">
+            <div className=" bg-[#fff] flex items-center w-[220px] mt-5 justify-evenly p-2 rounded-lg absolute right-[150px] lg:right-[330px]">
               <PhoneCall color="#fc4f4f" size={25} />
               <div>
                 <p className="text-lg font-semibold text-[#fc4f4f] poppins-regular">

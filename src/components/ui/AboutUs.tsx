@@ -41,7 +41,7 @@ const AboutUs = () => {
                 opened={opened}
                 onClose={() => setOpened(false)}
                 centered
-                size="md"
+                size="sm"
                 overlayProps={{
                   backgroundOpacity: 0.55,
                   blur: 3,
@@ -49,7 +49,7 @@ const AboutUs = () => {
               >
                 <div>
                   <iframe
-                    width="410"
+                    width="350"
                     height="300"
                     src="https://www.youtube.com/embed/gazPXi8IMg4?si=MdA8aJlWuG9gTR2j"
                     title="Programming Crear"

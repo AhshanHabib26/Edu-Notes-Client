@@ -80,7 +80,7 @@ const OurPatners = () => {
                   label={opd.title}
                 >
                   <img
-                    className="w-[80px] h-[80px] lg:w-[100px] lg:h-[100px]  object-cover rounded-full cursor-pointer border border-gray-200"
+                    className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]  object-cover rounded-full cursor-pointer border border-gray-200"
                     src={opd.image}
                     alt=""
                   />

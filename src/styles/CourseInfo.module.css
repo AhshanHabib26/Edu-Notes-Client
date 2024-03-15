@@ -4,7 +4,7 @@
 .CIContainer::before {
     position: absolute;
     content: "";
-    background-image: url(../assets/icons/shapeOne.png); /* Verify path and file name */
+    background-image: url(../assets/icons/shapeOne.png);
     background-size: contain; 
     background-repeat: no-repeat;
     top: -30px;
