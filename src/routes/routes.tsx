@@ -8,6 +8,7 @@ import Blogs from "../pages/Blogs";
 import SingleBlogs from "../pages/SingleBlogs";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
+import NotFound from "../pages/NotFound";
 
 export const routes = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ export const routes = createBrowserRouter([
       {
         path: "/sign-up",
         element: <Signup />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
