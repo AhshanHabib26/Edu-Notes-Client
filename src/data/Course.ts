@@ -9,7 +9,7 @@ import ImgEight from "../assets/images/courseImgEight.jpg";
 import ImgNine from "../assets/images/courseImgNine.jpg";
 import ImgTen from "../assets/images/courseImgTen.jpg";
 import ImgEleven from "../assets/images/cybersecurity.jpg";
-import ImgTwelve from "../assets/images/dataScience.png";
+import ImgTwelve from "../assets/images/dataScience.jpg";
 
 export const courseData = [
   {
