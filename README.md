@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+### Project Details
+---
+- Project Name: Education LMS Website (Edcation LMS project for students to learn online. Any place any time.)
+- Project Technology:
+  - Frontend: React, TypeScript, Tailwind CSS, Redux, RTK Query.
+- Project URL:
+  - For Frontend: [Click Here](https://edu-notes.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Project Details (Frontend)
+---
+- Menu :
+  - Main Menu
+    - Home
+    - Courses
+    - Blogs
+    - Contact US
+    - Register Page
+    - Login Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Home Page Section:
+  - Navbar
+  - Banner
+  - Top Categories
+  - About Us
+  - Popular Courses
+  - Testimonials
+  - Instructors
+  - Our Partners
+  - CTA
+  - Analytics Graph
+  - Blogs
+  - Footer
 
-## Expanding the ESLint configuration
+  
+### Note
+---
+  * If you want to design a website or need any website-related service, feel free to ask me.
+    * [WhatsApp](https://wa.me/1646418365)
+    * [Email](ahshan.habib026@gmail.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+#### This Website Totally User Friendly and Fully Responsive, Please review this awesome projects and feel free and give your opinion Or any suggestions. Really, it's my pleasure.
+---
